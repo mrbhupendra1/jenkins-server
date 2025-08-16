@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhupendra Kumar - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background: #1f2937;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 24px;
+      animation: slideInLeft 1s ease;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00adb5;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #00adb5, #393e46);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background: #222831;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #00adb5;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .section h3 {
+      color: #00adb5;
+      margin-bottom: 20px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .section p, .section ul {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background: #1f2937;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        background: #111;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        display: none;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bhupendra Kumar</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Linux & Cloud Engineer</h2>
+    <p>Automation | DevOps | Jenkins | Azure | Apache | Ansible</p>
+    <a href="#projects" class="btn">Explore Projects</a>
+  </section>
+
+  <section id="about" class="section">
+    <h3>About Me</h3>
+    <p>I’m a passionate Linux Administrator and aspiring DevOps Engineer with practical experience in server automation, NFS file sharing, Apache deployments, and Azure cloud services. I enjoy solving technical problems and building efficient cloud-based infrastructure.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h3>Projects</h3>
+    <ul>
+      <li>✅ Jenkins + GitHub + Apache automated deployment</li>
+      <li>✅ NFS File Sharing between Ubuntu Linux servers</li>
+      <li>✅ Azure VM setup with Backup, Storage, and VNet</li>
+      <li>✅ Ansible Automation for package & user management</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Contact Me</h3>
+    <p>Email: <strong>mrbhupendra333@gmail.com</strong></p>
+    <p>Phone: <strong>+91 9690667119</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bhupendra Kumar. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
