@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/<your-username>/demo-pipeline.git'
+                echo "Code is already checked out by Jenkins SCM step ✅"
+                sh 'ls -l'
             }
         }
 
